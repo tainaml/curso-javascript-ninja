@@ -64,19 +64,6 @@ booleano que representa "verdadeiro";
 */
 
 
-var pessoa = {
-                 nome: 'taina',
-                 sobrenome: 'ml',
-                 sexo: 'feminino',
-                 idade: '31',
-                 altura:'1.70',
-                 peso:'80',
-                 andando: false,
-                 caminhouQuantosMetros: 0
-                 }
-                 pessoa.fazerAniversario = function() {
-                   return pessoa.idade++;
-                 }
                  pessoa.andar = function (metros) {
                    pessoa.caminhouQuantosMetros = pessoa.caminhouQuantosMetros + metros
                    return pessoa.caminhouQuantosMetros
@@ -88,7 +75,11 @@ var pessoa = {
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
 da propriedade `andando` para o valor booleano que representa "falso".
 */
-?
+
+
+ pessoa.parar = function () {
+                   return pessoa.andando = false
+                 }
 
 /*
 Crie um método chamado `nomeCompleto`, que retorne a frase:
